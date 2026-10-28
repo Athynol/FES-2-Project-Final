@@ -280,6 +280,35 @@ FEATURES ↓
 
 */
 
+.features__header {
+    text-align: center;
+}
+
+.features__header__h3 {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #6415ff;
+}
+
+.features__header__h1 {
+    font-size: 48px;
+    font-weight: 1000;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.features__header__p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    margin-left: 23%;
+    margin-right: 23%;
+    opacity: 0.7;
+}
 
 #features {
     position: relative;
@@ -290,6 +319,52 @@ FEATURES ↓
     flex-direction: column;
     align-items: center;
 }
+
+.features__card_rows {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.features__cards {
+    display: flex;
+    margin-top: 64px;
+    width: calc(100% / 3);
+}
+
+.features__card__img-wrapper {
+    display: flex;
+    border-radius: 100%;
+    width: 20px;
+    align-items:flex-start;
+    width:30%;
+    margin-right: 20px;
+}
+
+.features__card__img {
+    padding: 20px;
+    border-radius: 100%;
+    border: 1px solid lightgrey;
+}
+
+.features__card {
+    padding: 32px;
+    display: flex;
+}
+
+.features__card__h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.features__card__p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
 
 
 /* 
@@ -305,7 +380,34 @@ QUALITY WORK ↓
     align-items: center;
 }
 
+.quality__img-wrapper {
+border-radius: 4px;
+  border: 1px solid rgb(229, 231, 235);
+  position: relative;
+  margin: 0 56px;
+  z-index: 2;
+  display: flex;
+}
 
+.quality__img {
+    width:100%;
+    z-index: 1;
+}
+
+
+.quality__grid {
+transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  fill: rgb(100, 21, 255);
+  --tw-text-opacity: 1;
+  color: rgba(100, 21, 255, var(--tw-text-opacity));
+  z-index: 0;
+  display: block;
+}
 /* 
 
 STEPS ↓
